@@ -1,12 +1,12 @@
-import './App.css'
+import { TodoProvider } from './context/TodoProvider';
+import { TodoApp } from './components/TodoApp';
 
 function App() {
-
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <TodoProvider>
+      <TodoApp />
+    </TodoProvider>
+  );
 }
 
-export default App
+export default App;
